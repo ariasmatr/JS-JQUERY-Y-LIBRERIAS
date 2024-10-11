@@ -2,6 +2,14 @@ const html = document.querySelector("html");
 html.setAttribute("data-bs-theme", "dark");
 
 document.addEventListener("DOMContentLoaded", () => {
+    //Inicializar AOS 
+    AOS.init();
+
+    var typed = new Typed('.subtitle', {
+      strings: ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates rem molestias ipsum nulla libero optio."],
+      typeSpeed: 30
+    });
+
     // --- Create LightBox
     const galleryGrid = document.querySelector(".gallery-grid");
     const links = galleryGrid.querySelectorAll("a");
